@@ -1,7 +1,7 @@
 /*
 	Name: fltadd.cpp
 	Copyright: 
-	Author: 
+	Author: Emilio
 	Date: 06/10/17 15:38
 	Description: 
 	Pag: 94
@@ -9,7 +9,7 @@
  run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 /* Las ventajas de Float es que representan valores entre enteros y su escala puede ser muy gande.
-La desventaja es que son lentos y sin un co-procesador matem·tico pueden dar otros resultados y perder precisiÛn*/
+La desventaja es que son lentos y sin un co-procesador matem√°tico pueden dar otros resultados y perder precisi√≥n*/
 #include <iostream>
 
 int main(int argc, char** argv) {
@@ -18,12 +18,13 @@ int main(int argc, char** argv) {
 	float b = a + 1.0f;
 	
 	cout << "\na = " << a << endl << endl;
-	cout << "b - a = " << b - a << endl; // el resultado deberÌa dar 1
+	cout << "b - a = " << b - a << endl; // el resultado deber√≠a dar 1
 	
-	/*El problema es que 2.34E+22 representa un n˙mero con 23 dÌgitos a la izquierda del decimal(23400000000000000000000.0). 
-	Sumando 1, est· intentando agregar 1 al 23ro dÌgito en ese n˙mero. 
-	Pero el tipo 'flotante' puede representar sÛlo los primeros 6 o 7 dÌgitos 
-	de un n˙mero, por lo que intentar cambiar el dÌgito 23 no tiene ning˙n efecto en el valor. */
+	/*El problema es que 2.34E+22 representa un n√∫mero con 23 d√≠gitos a la izquierda del decimal(23400000000000000000000.0). 
+	Sumando 1, est√° intentando agregar 1 al 23ro d√≠gito en ese n√∫mero. 
+	Pero el tipo 'flotante' puede representar s√≥lo los primeros 6 o 7 d√≠gitos 
+	de un n√∫mero, por lo que intentar cambiar el d√≠gito 23 no tiene ning√∫n efecto en el valor. */
 	
 	return 0;
 }
+
