@@ -1,3 +1,4 @@
+//Este programa muestra los límites de las variables
 #include <iostream>
 #include <climits>
 
@@ -10,7 +11,7 @@ int main(int argc, char** argv) {
 	short n_short = SHRT_MAX;
 	long n_long = LONG_MAX;
 	
-	// el operador sizeof yields size of type or of variable
+	// El operador sizeof produce el tamaño del tipo o de la variable
 	cout << "int es de   " << sizeof (int) << " bytes."<< endl;
 	cout << "short es de " << sizeof n_short << " bytes." << endl;
 	cout << "long es de  " << sizeof n_long << " bytes." << endl << endl;
@@ -31,7 +32,7 @@ int main(int argc, char** argv) {
 	cout << "Valor Maximo de Unsigned INT: " << UINT_MAX << endl;
 	cout << "Valor Maximo de Unsigned Long: " 	<<ULONG_MAX << endl;
 	cout << "declaracion alternativa de c++ int variable(1981)" << endl;
-	int variable(1981);
+	int variable(2000);
 	cout << variable << endl;
 	
 	system("pause");
@@ -39,3 +40,4 @@ int main(int argc, char** argv) {
 	
 	return 0;
 }
+
